@@ -21,8 +21,27 @@ public class EratosthenesPrimeSieve  implements PrimeSieve{
     }
     @Override
     public boolean isPrime(int p) {
+        int counter = 2;
 
-        if()
+        for (int i = 0; i < bound; i++) {
+
+            if(primes.get(counter))
+            {
+                for (int j = counter; j < bound; j+=counter) {
+
+                    if(j<=bound)
+                    {
+                        primes.set(j,false);
+
+                    }
+
+                }
+                counter++;
+
+            }
+
+
+        }
 
 
 
@@ -33,6 +52,8 @@ public class EratosthenesPrimeSieve  implements PrimeSieve{
 
     @Override
     public void printPrimes() {
+
+        
 
     }
 }
