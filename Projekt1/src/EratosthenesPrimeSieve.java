@@ -12,10 +12,10 @@ public class EratosthenesPrimeSieve  implements PrimeSieve{
        bound = ij;
         primes = new ArrayList<>();
         numbs = new ArrayList<>();
-        for (int i = 2; i < bound; i++) {
+        for (int i = 0; i < bound; i++) {
 
-            numbs.set(i,i);
-            primes.set(i,true);
+            numbs.add(i);
+            primes.add(true);
 
         }
 
@@ -24,24 +24,26 @@ public class EratosthenesPrimeSieve  implements PrimeSieve{
     public boolean isPrime(int p) {
         int counter = 2;
 
-        for (int i = 0; i < bound; i++) {
+        for (int i = 2; i < bound; i++) {
 
             if(primes.get(counter))
             {
-                for (int j = counter; j < bound; j+=counter) {
+                for (int j = counter; j < bound; j*=2) {
+                    if(j==counter){
 
-                    if(j<=bound)
+                    }
+                    else if(j<=bound)
                     {
                         primes.set(j,false);
 
                     }
 
                 }
-                counter++;
+
 
             }
 
-
+            counter++;
         }
 
 
@@ -58,7 +60,7 @@ public class EratosthenesPrimeSieve  implements PrimeSieve{
         {
             if(primes.get(i))
             {
-                numbs.add(i);
+                System.out.println(i);
             }
         }
 

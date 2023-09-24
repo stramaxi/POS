@@ -49,11 +49,26 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1695586484752</updated>
-      <workItem from="1695586485881" duration="811000" />
+      <workItem from="1695586485881" duration="2030000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="ProcessAttachRunConfigurationType">
+        <watch expression="((Object[])((ArrayList)p.primes).elementData)[6]" custom="java.lang.Object[],java.util.ArrayList" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
