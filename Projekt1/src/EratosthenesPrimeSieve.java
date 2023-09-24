@@ -53,7 +53,13 @@ public class EratosthenesPrimeSieve  implements PrimeSieve{
     @Override
     public void printPrimes() {
 
-        
+        for (int i = 2; i < bound; i++)
+        {
+            if(primes.get(i))
+            {
+                numbs.add(i);
+            }
+        }
 
     }
 }
