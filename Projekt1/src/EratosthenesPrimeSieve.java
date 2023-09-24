@@ -7,8 +7,9 @@ public class EratosthenesPrimeSieve  implements PrimeSieve{
     private List<Boolean> primes;
     private List<Integer> numbs;
 
-    public EratosthenesPrimeSieve()
+    public EratosthenesPrimeSieve(int ij)
     {
+       bound = ij;
         primes = new ArrayList<>();
         numbs = new ArrayList<>();
         for (int i = 2; i < bound; i++) {
